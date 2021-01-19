@@ -1,0 +1,8 @@
+<div class="view-page" ng-repeat="item in newscontent">
+        <h3>{{item.title}}</h3>
+        <div class="news-item news-author">{{item.createDate;}} | {{item.author;}}</div>
+        <div class="news-item">{{item.content}} </div>
+        <div class="news-tag news-item">
+                <a href="">{{item.tags}}</a>
+        </div>
+</div>

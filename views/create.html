@@ -1,0 +1,30 @@
+<div class="view-page" ng-controller="createCtrl">
+        <ul class="user"> 
+            <li>HI ADMIN</li>
+            <li><a href="" ng-click="logout()">LOGOUT</a></li> 
+        </ul>
+        <form ng-submit="addNews(title, content, author, tags)">
+                <div class="field"><label>Post Title</label></div>
+                <div class="field">
+                    <input ng-model="title" type="text" name="title" id = "title" placeholder="Post Title"/>
+                </div>
+                <div class="field"><label>Author</label></div>
+                <div class="field">
+                    <input ng-model="author" name="author" id = "author" placeholder="Author"/>
+                </div>
+
+                <div class="field currentdate">Current Date - {{currentDate}}</div>
+
+                <div class="field"><label>Content</label></div>
+                <div class="field">
+                    <textarea ng-model="content" name = "content" id = "content" rows="10" cols="120" placeholder="Post content here"></textarea>
+                </div>
+                <div class="field"><label>Tags</label></div>
+                <div class="field">
+                    <input ng-model="tags" name="tags" id="tags" placeholder="Tags, separated by commas..."/>
+                </div>
+                <div class="field">
+                    <input class="button" type="submit" value="Post"/>
+                </div>
+        </form>
+</div>

@@ -40,6 +40,7 @@ app.controller("menuCtrl", function ($scope, $location, $http) {
     $scope.visiblePageId = '';
     //click event
     $scope.showPage = function (pageId) {
+        console.log("page id: " + $scope.visiblePageId);
         $scope.visiblePageId = pageId;
         $location.path(pageId);
     }
